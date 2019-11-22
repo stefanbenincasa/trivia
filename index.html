@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Trivia</title>
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <div class="headings" id="headings">
+
+                <h1>Trivia</h1>
+                <h2>Choose a trivia and sharpen your skills</h2>
+            </div>
+
+            <form>
+
+                <div class="viewOne" id="viewOne">
+
+                    <div>
+
+                        <label for="difficulty"><u>Difficulty</u></label>
+                        <select class="select" id="difficulty" name="difficulty">
+                            <option>Easy</option>
+                            <option>Medium</option>
+                            <option>Hard</option>
+                        </select>   
+                    </div>
+                    
+                    <div>
+
+                        <label for="category"><u>Category</u></label>
+                        <select class="select" id="category" name="category">
+                            <option>General Knowledge</option>
+                            <option>Entertainment: Books</option>
+                            <option>Entertainment: Film</option>
+                            <option>Entertainment: Music</option>
+                            <option>Entertainment: Television</option>
+                            <option>Entertainment: Video Games</option>
+                            <option>Entertainment: Board Games</option>
+                            <option>Entertainment: Cartoon & Animations</option>
+                            <option>Science & Nature</option>
+                            <option>Science: Computers</option>
+                            <option>Sports</option>
+                            <option>Geography</option>
+                            <option>History</option>
+                            <option>Celebrities</option>
+                            <option>Animals</option>
+                            <option>Vehicles</option>
+                        </select>   
+                    </div>
+
+
+                    <button type="submit" id="begin" class="button begin">Begin</button>
+
+                </div>
+
+                <div class="viewTwo" id="viewTwo">
+
+                    <div class="question" id="question"></div>
+                    <ul class="choices" id="choices"></ul>
+
+                    <div class="controls">
+
+                        <div>
+                            <label for="score">Score :</label>
+                            <span class="score" id="score">0</span>
+                        </div>
+                        <div>
+                            <button class="button" id="next">Next</button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="viewThree" id="viewThree">
+                    <div class="controls">
+
+                        <div>
+                            <label for="finalScore">Final Score :</label>
+                            <span class="score" id="finalScore"></span>
+                        </div>
+                        <button class="button" id="reset">Reset</button>
+                    </div>
+                </div>
+
+            </form>            
+        </div>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>
