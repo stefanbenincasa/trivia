@@ -50,8 +50,11 @@ function formatQuestions(questions) {
         question.incorrect_answers.forEach((incorrectAnswer) => {
             possibleAnswers.push(incorrectAnswer);
         })
-        // Get correct answer also
-        possibleAnswers.push(question.correct_answer); 
+
+        // Place correctAnswer into random position according to array.length
+        // Array length -- possibleAnswers
+        let randomIndex = Math.floor(Math.random() * possibleAnswers.length+1);
+        possibleAnswers.splice(randomIndex, 0, question.correct_answer); 
 
         // Create formatted question object then push to array
         let formattedQuestion = {
@@ -203,7 +206,6 @@ function findCategory(selectedCategory, categories){
     categories.forEach((category) => {
         if(selectedCategory === category.name){
             index = category.id;
-            console.log(category);
         }
     });
 

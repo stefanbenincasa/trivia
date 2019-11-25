@@ -185,7 +185,7 @@ h2 {
 
 li {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
     li p {
@@ -222,7 +222,7 @@ form {
     }
 
     li p {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .viewOne div {
