@@ -54,7 +54,8 @@ function formatQuestions(questions) {
         // Place correctAnswer into random position according to array.length
         // Array length -- possibleAnswers
         let randomIndex = Math.floor(Math.random() * possibleAnswers.length+1);
-        possibleAnswers.splice(randomIndex, 0, question.correct_answer); 
+        possibleAnswers.splice(randomIndex, 0, question.correct_answer);
+        console.log(randomIndex); 
 
         // Create formatted question object then push to array
         let formattedQuestion = {
